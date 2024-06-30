@@ -1,0 +1,26 @@
+This Solidity smart contract demonstrates the implementation of require(), assert(), and revert() statements for improved error handling and integrity checks. It includes basic token functionalities such as minting, burning, and transferring tokens, in line with the MetaCrafters Ethereum+Avalanche functions and errors course.
+
+Description
+The MyAdvancedToken contract is written in Solidity and includes functionalities to mint new tokens, burn existing tokens, and transfer tokens between addresses. It utilizes Solidity's built-in error handling functions (require(), assert(), and revert()) to ensure the contract operates safely and correctly.
+
+Features
+Token Details: Stores the token name, abbreviation, and total supply.
+Balance Tracking: Uses a mapping to keep track of token balances for Ethereum addresses.
+Mint Function: Allows the creation of new tokens by increasing the total supply and adding tokens to a specified address. Includes a require() check to prevent minting to the zero address.
+Burn Function: Enables the destruction of tokens by decreasing the total supply and deducting tokens from a specified address. Includes a require() check to ensure sufficient balance.
+Transfer Function: Allows token transfer between addresses with require() checks for valid addresses and sufficient balances.
+Test Assert Function: Demonstrates the use of assert() to check for conditions that should always be true.
+Test Revert Function: Demonstrates the use of revert() to handle invalid conditions.
+Getting Started
+Prerequisites
+To interact with or deploy this contract, you need:
+
+An Ethereum development environment or online IDE such as Remix.
+Basic knowledge of Solidity and Ethereum smart contract deployment.
+Deploying the Contract
+Online IDE (Remix):
+Go to Remix IDE.
+Create a new file and name it MyAdvancedToken.sol.
+Copy and paste the contract code into the file.
+Compile the contract using the Solidity compiler.
+Deploy the contract and interact with it using Remix's deployment and transaction tools.
